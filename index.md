@@ -1,37 +1,114 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-You can use the [editor on GitHub](https://github.com/jOR13/you/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <title>YOU</title>
 
-### Markdown
+	<style>
+      
+     	body{
+      		text-align: center;
+			background-image: url("https://m.media-amazon.com/images/M/MV5BYzBjMTg1MWMtMjhkNi00ZDk3LTg4YWUtYmE3NjBlNTE0OTdjXkEyXkFqcGdeQXVyMTg4ODgxNjY@._V1_SY1000_SX1500_AL_.jpg");
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+      	}
 
-```markdown
-Syntax highlighted code block
+    	 h1{
+     		margin-top: 35px;
+     		color: #FFFFFF;
+			background: #333333;
+			border-radius: 20px;
+			text-shadow: 0 -1px 4px #FFF
 
-# Header 1
-## Header 2
-### Header 3
+     	}
 
-- Bulleted
-- List
+     	div{
+     		background-color: white;
+     		border-style: groove;
+     		opacity: .8;
 
-1. Numbered
-2. List
+     	}
 
-**Bold** and _Italic_ and `Code` text
+	</style>
 
-[Link](url) and ![Image](src)
-```
+	<script>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+		function getOptions() {
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jOR13/you/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+		var e = document.getElementById("mySelect");
+    	var str = e.options[e.selectedIndex].text;
 
-### Support or Contact
+    	var e2 = document.getElementById("mySelect2");
+    	var str2 = e2.options[e2.selectedIndex].text;
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    	//alert(str);
+
+    	if (str==="Leer un buen libro" && str2=="Atender el negocio familiar")
+    	{
+        	alert("TUE ERES JOE");
+    	}   
+
+    	if (str==="Conocer chicos" && str2=="Dedicarte a tu carrera")
+    	{
+        	alert("TUE ERES BECK");
+    	}  
+
+    	if (str==="Ir de compras" && str2=="trabajo? que es eso?")
+    	{
+        	alert("TUE ERES PEACH");
+    	} 
+
+
+		}	
+
+
+
+	</script>
+
+</head>
+  <body>
+    
+    <div class="container">
+  		<h1>Que personaje de la serie YOU eres?</h1>
+
+
+<form>
+Que te gusta hacer en tu tiempo libre?
+<select id="mySelect">
+  <option>Tomarte selfies</option>
+  <option>Leer un buen libro</option>
+  <option>Ir de compras</option>
+  <option>Conocer chicos</option>
+</select>
+<br><br>
+
+</form>
+
+<form>
+Cual es tu trabajo ideal?
+<select id="mySelect2">
+  <option>Dedicarte a tu carrera</option>
+  <option>Trabajar como freelance</option>
+  <option>Atender el negocio familiar</option>
+  <option>trabajo? que es eso?</option>
+</select>
+<br><br>
+<!--<input type="button" onclick="getOptions()" value="Output all options"> -->
+</form>
+
+
+
+<input type="button" onclick="getOptions()" value="DESCUBRIR TU PERSONAJE">
+<br><br>
+
+
+	</div>
+    
+  </body>
+</html>
