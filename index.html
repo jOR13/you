@@ -34,7 +34,7 @@
      	div{
      		background-color: white;
      		border-style: groove;
-     		opacity: .9;
+     		opacity: .8;
 
      	}
 
@@ -58,14 +58,101 @@
 		function getOptions() {
 
 
-		var e = document.getElementById("mySelect");
-    	var str = e.options[e.selectedIndex].text;
+		  var e = document.getElementById("mySelect");
+    	var pregunta1 = e.options[e.selectedIndex].text;
 
     	var e2 = document.getElementById("mySelect2");
-    	var str2 = e2.options[e2.selectedIndex].text;
+    	var pregunta2 = e2.options[e2.selectedIndex].text;
+
+      var e3 = document.getElementById("mySelect3");
+      var pregunta3 = e3.options[e3.selectedIndex].text;
+
+      var cont=0;
+
+      //JOE 100
+      //BECK 20
+      //PEACH 70
+
+      switch(pregunta1){
+
+        case "Tomarte selfies":
+          cont=cont+10;
+        break;
+
+        case "Leer un buen libro":
+          cont=cont+5;
+        break;
+
+       
+        case "Ir de compras":
+          cont=cont+5;
+        break;
+
+        case "Conocer chicos":
+          cont=cont+2;
+        break;
+
+
+      }
+
+      switch(pregunta2){
+
+        case "Dedicarte a tu carrera":
+          cont=cont+2;
+        break;
+
+        case "Trabajar como freelance":
+          cont=cont+2;
+        break;
+
+       
+        case "Atender el negocio familiar":
+          cont=cont+20;
+        break;
+
+        case "trabajo? que es eso?":
+          cont=cont+5;
+        break;
+      }
+
+    
+
+      switch(pregunta3){
+
+        case "Eres tu mism@":
+          cont=cont+1;
+        break;
+
+        case "Comprando obsequios caros":
+          cont=cont+5;
+        break;
+
+       
+        case "Investigas a esa persona para enamorarla, finjiendo ser el chico perfecto":
+          cont=cont+20;
+        break;
+
+        case "No te interesa ligar":
+          cont=cont+3;
+        break;
+      }
+
+alert(cont)
+
+  if (cont>=50) {
+
+    alert("ERES JOE");
+
+    }if (cont>25&&cont<50){
+        alert("ERES PEACH");
+    }
+    else
+    {
+      alert("ERES BECK");
+    }
 
     	//alert(str);
-
+/*
     	if (str==="Leer un buen libro" && str2=="Atender el negocio familiar")
     	{
         	alert("TUE ERES JOE");
@@ -81,7 +168,7 @@
         	alert("TUE ERES PEACH");
     	} 
 
-
+*/
 		}	
 
 
@@ -119,6 +206,20 @@ Cual es tu trabajo ideal?
 <!--<input type="button" onclick="getOptions()" value="Output all options"> -->
 </form>
 
+
+
+
+<form>
+Cual es tu manera de ligar?
+<select id="mySelect3">
+  <option>Eres tu mism@</option>
+  <option>Comprando obsequios caros</option>
+  <option>Investigas a esa persona para enamorarla, finjiendo ser el chico perfecto</option>
+  <option>No te interesa ligar</option>
+</select>
+<br><br>
+<!--<input type="button" onclick="getOptions()" value="Output all options"> -->
+</form>
 
 
 <input type="button" onclick="getOptions()" value="DESCUBRIR TU PERSONAJE">
